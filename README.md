@@ -28,12 +28,49 @@
  * [Android 测试驱动开发](#android-test-driven-development)
  * [其他](#others)
 
+## :star:的个数代表面试必备指数，最多5个 
+
  ### 数据结构与算法
 
 > 关于数据结构与算法，问题的难度完全取决于你所申请的公司
 
-* 数组
-* 链表
+* 数组 :star:
+   - 由有限个类型相同元素的集合所组成的数据结构，分配一块连续的内存来存储，利用元素的索引可以计算出该元素对应的储存地址。分为一维数组和多为数组，其中一维数组是最简单的数据结构类型，同时也是用的最多的数组数据结构:
+
+        <table>
+            <tr>
+                <th>算法</th>
+                <th>平均</th>
+                <th>最差</th>
+                <th>图形表示</th>
+            </tr>
+            <tr>
+                <td>空间 (Space) </td>
+                <td>O(n)</td>
+                <td>O(n)</td>
+                <td rowspan="5">
+                    <img src="https://github.com/stormzhang/android-interview-questions-cn/blob/master/assets/array?raw=true"/>
+                </td>
+            </tr>
+            <tr>
+                <td>查找 (Search) </td>
+                <td>O(n)</td>
+                <td>O(n)</td>
+            </tr>
+            <tr>
+                <td>插入 (Insert)</td>
+                <td>O(n)</td>
+                <td>O(n)</td>
+            </tr>
+            <tr>
+                <td>删除 (Delete)	</td>
+                <td>O(n)</td>
+                <td>O(n)</td>
+            </tr>
+        </table>
+
+
+* 链表 :star::star::star:
    - 链表看起来更像树，而不是数组，它使用一组结点来表示一个序列。每一个结点都包含数据和一个指针。在链表中，结点中的数据可以为任意类型，而指针则是指向下一结点的引用。链表包含一个头结点和一个尾结点。头结点是链表中的第一个结点，尾结点是最后一个结点。链表不是一个循环数据结构，所以尾结点没有指向头结点的指针，指针为空。一些基础方法的时间复杂度如下：
 
         | 算法          | 平均    | 最差      |
@@ -42,8 +79,9 @@
         | 查找 (Search) | O(n)    | O(n)     |
         | 插入 (Insert) | O(1)    | O(1)     |
         | 删除 (Delete) | O(1)    | O(1)     |
-* 双向链表
-* 栈
+
+* 双向链表 :star::star:
+* 栈 :star::star:
     - 栈是一个有着“后进先出”特性的基础数据结构，这就意味着最后一个入栈的元素，也是第一个出栈的。栈就像是一堆书，想要得到书堆中的第一本书（最下面一本），必须把其他的书都先拿走。向栈中添加一个元素的操作被称为 Push（入栈），删除一个元素的操作被称为 Pop（出栈），查看且不删除最后一个入栈的元素的操作被称为 Top 。[实现栈的常用方法是使用链表（LinkedList），也可以使用不允许空值的 StackArray（使用数组实现），还有允许空值的 Vector](https://en.wikibooks.org/wiki/Data_Structures/Stacks_and_Queues#Performance_Analysis)
 
         <table>
